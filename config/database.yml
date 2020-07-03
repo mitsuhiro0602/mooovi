@@ -11,10 +11,11 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: mooovi_development
+  database: search-app_development
   pool: 5
   username: root
-  password:
+  password: mitsu0602
+  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,15 +23,16 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: mooovi_test
+  database: search-app_test
   pool: 5
   username: root
-  password:
+  password: mitsu0602
+  socket: /tmp/mysql.sock
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: mooovi_production
+  database: search-app_production
   pool: 5
   username: root
-  password:
+  password: mitsu0602
